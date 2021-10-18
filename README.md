@@ -1,4 +1,4 @@
-# Data Modeling with Postgres
+# Data Modeling with PostgreSQL
 
 ## Introduction
 
@@ -19,7 +19,7 @@ The database is based on two datasets.
 
 The database (db) is modeled after the star schema. [The Star Schema](https://en.wikipedia.org/wiki/Star_schema) separates business process data into facts, which hold the measurable, quantitative data about a business, and dimensions which are descriptive attributes related to fact data. 
 
-For the Sparkify database we have the 'songplays' table as the fact table and the 'songs', 'artists', 'users', and 'time' tables as dimension tabels, shown also in the ERD in the following image: ![ERD diagram of the Sparkify database](PostgresDB.png)
+For the Sparkify database we have the 'songplays' table as the fact table and the 'songs', 'artists', 'users', and 'time' tables as dimension tables, shown also in the ERD in the following image: ![ERD diagram of the Sparkify database](PostgresDB.png)
 
 ## The ETL Pipeline
 
@@ -29,6 +29,12 @@ The perform all necessary tasks for the ETL processes there are three files:
 2. **`create_tables.py`** accesses the sql queries to first drop an existing version of the Sparkify db and then newly creates the db and its tables
 3. **`etl.py`** opens the JSON files and populates the db tables with the respective data
 
+## How to run the project
+
+1. install a [PostgreSQL Database](https://www.postgresql.org/)
+2. download all files including the `/data` folder
+2. run **`python create_tables.py`**
+3. run **`python etl.py`**
 
 ## Song Play Analysis
 
