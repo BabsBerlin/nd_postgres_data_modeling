@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project I build a Postgres database for the fictitious music streaming app **SPARKIFY**. It was part of my *Udacity Nanodegree in Data Engineering*.
+For this project I build a Postgres database for the fictitious music streaming app **SPARKIFY**. It was part of my *[Udacity Nanodegree in Data Engineering](https://www.udacity.com/course/data-engineer-nanodegree--nd027)*.
 
 ## The Task
 
