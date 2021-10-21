@@ -33,9 +33,13 @@ The perform all necessary tasks for the ETL processes there are three files:
 
 1. install a [PostgreSQL Database](https://www.postgresql.org/)
 2. download all files including the `/data` folder
-2. run **`python create_tables.py`**
-3. run **`python etl.py`**
+2. first run **`python create_tables.py`** to create the db and tables, as described above
+3. secondly run **`python etl.py`** to fill the db tables, as described above
 
-## Song Play Analysis
 
-I also provided some basic analysis queries in the notebook analyse_data.ipynb.
+## Additional files in this repo
+
+- **`analyse_data.ipynb`** provides some basic analysis queries to better understand the data in the Sparkify database
+- **`test.ipynb`** provides simple test queries to check the correct initialization and population of the database tables
+- **`PostgresDB.png`** is an image of the ERD to give you a better overview of the database structure
+- **`/data`** is the folder for the data files used in this project
